@@ -2,7 +2,7 @@
   "name": "podcast-react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zhitianguan.github.io/React-Podcast-App/",
+  "homepage": "https://zhitianguan.github.io/nutrition-app/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.11.2",
