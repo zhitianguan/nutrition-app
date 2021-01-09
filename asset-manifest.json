@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/nutrition-app/static/css/main.f9935f13.chunk.css",
+    "main.js": "/nutrition-app/static/js/main.57e0465e.chunk.js",
+    "main.js.map": "/nutrition-app/static/js/main.57e0465e.chunk.js.map",
+    "runtime-main.js": "/nutrition-app/static/js/runtime-main.148348f1.js",
+    "runtime-main.js.map": "/nutrition-app/static/js/runtime-main.148348f1.js.map",
+    "static/js/2.ab88b7e2.chunk.js": "/nutrition-app/static/js/2.ab88b7e2.chunk.js",
+    "static/js/2.ab88b7e2.chunk.js.map": "/nutrition-app/static/js/2.ab88b7e2.chunk.js.map",
+    "index.html": "/nutrition-app/index.html",
+    "precache-manifest.744d075aa7d27654dfc1be1907eb9d90.js": "/nutrition-app/precache-manifest.744d075aa7d27654dfc1be1907eb9d90.js",
+    "service-worker.js": "/nutrition-app/service-worker.js",
+    "static/css/main.f9935f13.chunk.css.map": "/nutrition-app/static/css/main.f9935f13.chunk.css.map",
+    "static/js/2.ab88b7e2.chunk.js.LICENSE.txt": "/nutrition-app/static/js/2.ab88b7e2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.148348f1.js",
+    "static/js/2.ab88b7e2.chunk.js",
+    "static/css/main.f9935f13.chunk.css",
+    "static/js/main.57e0465e.chunk.js"
+  ]
+}
