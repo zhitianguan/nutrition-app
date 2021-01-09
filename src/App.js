@@ -73,10 +73,10 @@ class App extends React.Component {
             <Grid style={{ justifyContent: "center" }} container spacing={0}>
                 <Grid item xs={10}>
                     <Grid item container spacing={3} style={{ justifyContent: "center" }}>
-                        <Grid item xs={6}style={{ marginTop: "10px" }}>
+                        <Grid item xs={4}style={{ marginTop: "10px" }}>
                             <Search onFormSubmit={this.searchFood} food={food} addFood={this.addFood}/>
                         </Grid>
-                        <Grid item xs={6} style={{marginTop:"10px"}}>
+                        <Grid item xs={8} style={{marginTop:"10px"}}>
                             <AddedFoods addedFoods={addedFoods} removeFood={this.removeFood}/>
                         </Grid>
                     </Grid>

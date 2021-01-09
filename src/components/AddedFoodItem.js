@@ -1,11 +1,14 @@
 import React from "react";
-import { Grid, ListItemSecondaryAction, IconButton, makeStyles, ListItem, ListItemText} from "@material-ui/core";
+import {Typography, ListItemSecondaryAction, IconButton, makeStyles, ListItem, ListItemText} from "@material-ui/core";
 import RemoveCircleIcon from '@material-ui/icons/RemoveCircle';
 
 export default ({food, addFood, key,removeFood}) => {
   return (
       <>
     <ListItem style={{width:"30vw"}}>
+            <Typography  variant="h5">
+              {key}
+            </Typography>
     <ListItemText primary={food.name} secondary={`${food.calories} calories`} />
                 <ListItemSecondaryAction>
                     <IconButton edge="end" aria-label="delete" onClick={()=>{removeFood(key)}}>

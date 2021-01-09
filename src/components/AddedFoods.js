@@ -2,18 +2,10 @@ import React from "react";
 import { Grid, makeStyles, List, Divider, Typography,Card, CardContent} from "@material-ui/core";
 import AddedFoodItem from './AddedFoodItem';
 
-export default ({addedFoods, removeFood}) => {
-    const useStyles = makeStyles({
-        list: {
-            width: '40vw',
-        },
-    });
-    const classes = useStyles();
-
-    
+export default ({addedFoods, removeFood}) => {    
     if (addedFoods.length<1) {
       return (
-        <Card style={{height: "55vh"}}>
+        <Card style={{height: '60vh'}}>
           <CardContent>   
             <Typography variant="h5">
               Your Foods
@@ -40,18 +32,15 @@ export default ({addedFoods, removeFood}) => {
                 </>
               )
           })
-    
-
-	
 
   return (
-      <Card style={{height: "55vh"}}>
+      <Card style={{height: "60vh"}}>
           <CardContent>   
             <Typography variant="h5" style={{marginBottom:"10px"}}>
               Your Foods
             </Typography>
 
-          <Grid container style={{justifyContent:"center", maxHeight: '100%', overflow: 'auto'}} spacing={3}>
+          <Grid container style={{justifyContent:"center", maxHeight: '50vh', overflow: 'auto'}} spacing={3}>
             <List>
                 {listOfAddedFoods}
             </List>
