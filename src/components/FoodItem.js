@@ -3,8 +3,6 @@ import { Grid, IconButton, makeStyles, Typography,Card, CardMedia, CardActionAre
 import AddCircleSharp from '@material-ui/icons/AddCircleSharp';
 
 export default ({food, addFood}) => {
-
-
   const useStyles = makeStyles({
     details: {
       width: "50%"
@@ -27,12 +25,9 @@ export default ({food, addFood}) => {
               </Typography>
           </CardContent>
           <IconButton aria-label="delete" onClick={()=>{addFood(food)}}>
-                      <AddCircleSharp className={classes.icon}/>
+            <AddCircleSharp className={classes.icon}/>
           </IconButton>     
     </Card>
   </Grid>
-
-
-    
   );
 }

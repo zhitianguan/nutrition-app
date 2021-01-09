@@ -1,6 +1,6 @@
 import React from 'react'
 import SearchBar from "material-ui-search-bar";
-import {Divider, List, Grid} from '@material-ui/core';
+import {Divider, List} from '@material-ui/core';
 import Suggestion from './Suggestion';
 import FoodList from './FoodList'
 import axios from 'axios'
@@ -15,7 +15,6 @@ class SearchBarWrapper extends React.Component {
         }
     }
 
-    //handlers that update the input in state once input is added
     handleChange = (newValue) => {
         this.setState({
             searchTerm: newValue,
@@ -38,8 +37,6 @@ class SearchBarWrapper extends React.Component {
         if (term.length>0){
           const id = "a8ca87da"
           const key = "234285a1a06cedc063e96ce6c802fb9e"
-          //const cors = 'https://cors-anywhere.herokuapp.com/'
-
           axios.get(`https://api.edamam.com/auto-complete?q=${term}&limit=5&app_id=${id}&app_key=${key}`)
             .then(res=>{
                 this.setState ({
@@ -49,26 +46,21 @@ class SearchBarWrapper extends React.Component {
             .catch(err=>{
                 console.log('autocorrect error')
             })
-          
         }
       }
 
     onSuggestionClick = (newValue) => {
-    //term = term.toString().replace(/[^a-zA-Z0-9]/g, ' ');
         newValue= newValue.toString().replace(/[^a-zA-Z0-9]/g, ' ');
         this.setState({
             searchTerm: newValue,
             suggestions: []
         })
-        console.log(newValue)
         const {onFormSubmit} = this.props
         this.setState ({
             typing: false
         })
         onFormSubmit (newValue)
     }    
-
-    
 
     render () {
         const {suggestions, searchTerm, typing} = this.state
@@ -109,4 +101,3 @@ class SearchBarWrapper extends React.Component {
     
     export default SearchBarWrapper
     
-    //<Suggestions foodSuggestions={this.props.foodSuggestions} onSelectFood={searchFood()}/>

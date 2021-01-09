@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, makeStyles, List, Divider, Typography,Card, CardContent} from "@material-ui/core";
+import { Grid, List, Divider, Typography,Card, CardContent} from "@material-ui/core";
 import AddedFoodItem from './AddedFoodItem';
 
 export default ({addedFoods, removeFood}) => {    

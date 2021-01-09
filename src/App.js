@@ -6,8 +6,6 @@ import NutrientTotals from './components/NutrientTotals'
 import AddedFoods from './components/AddedFoods'
 import axios from 'axios'
 
-
-
 class App extends React.Component {
   constructor (props) {
     super (props)
@@ -18,14 +16,11 @@ class App extends React.Component {
   }
 
   searchFood = async (term) => {
-    //term = term.toString().replace(/[^a-zA-Z0-9]/g, ' ');
-
     const id = "a8ca87da"
     const key = "234285a1a06cedc063e96ce6c802fb9e"
-
-    const url2= `https://api.edamam.com/api/food-database/v2/parser?nutrition-type=logging&ingr=${term}&app_id=${id}&app_key=${key}`
+    const url= `https://api.edamam.com/api/food-database/v2/parser?nutrition-type=logging&ingr=${term}&app_id=${id}&app_key=${key}`
     
-    let result = await (axios.get(url2))
+    let result = await (axios.get(url))
     console.log(result.data)
     let newFood = []
     console.log(result.data)
