@@ -7,7 +7,7 @@ export default ({addedFoods, removeFood}) => {
       return (
         <Card style={{height: '60vh'}}>
           <CardContent>   
-            <Typography variant="h5">
+            <Typography variant="h6">
               Your Foods
             </Typography>
 
@@ -36,7 +36,7 @@ export default ({addedFoods, removeFood}) => {
   return (
       <Card style={{height: "60vh"}}>
           <CardContent>   
-            <Typography variant="h5" style={{marginBottom:"10px"}}>
+            <Typography variant="h6" style={{marginBottom:"10px"}}>
               Your Foods
             </Typography>
 

@@ -25,72 +25,72 @@ export default ({addedFoods}) => {
   return (
       <Card style={{backgroundColor: "#DEFDE0"}}>
           <CardContent>   
-            <Typography variant="h5" noWrap>
+            <Typography variant="subtitle1" noWrap>
               Totals
             </Typography>
 
-          <Grid container style={{justifyContent:"left"}} spacing={2}>
+          <Grid container style={{justifyContent:"left"}} spacing={1}>
             <Grid item xs={3}> 
-              <Typography variant="subtitle1">
+              <Typography variant="subtitle2">
                 Calories: 
               </Typography>
-              <Typography variant="h5">
+              <Typography variant="subtitle1">
                 {+totalCal.toFixed(3)}
               </Typography>
             </Grid>
             <Grid item xs={3}> 
-              <Typography variant="subtitle1">
+              <Typography variant="subtitle2">
                 Protein (g): 
               </Typography>
-              <Typography variant="h5">
+              <Typography variant="subtitle1">
                 {+totalProtein.toFixed(3)}
               </Typography>
             </Grid>
             <Grid item xs={3}> 
-              <Typography variant="subtitle1">
+              <Typography variant="subtitle2">
                 Carbohydrates (g): 
               </Typography>
-              <Typography variant="h5">
+              <Typography variant="subtitle1">
                 {+totalCarbs.toFixed(3)}
               </Typography>
             </Grid>
             <Grid item xs={3}> 
-              <Typography variant="subtitle1">
+              <Typography variant="subtitle2">
                 Cholestrol (mg): 
               </Typography>
-              <Typography variant="h5">
+              <Typography variant="subtitle1">
                 {+totalChole.toFixed(3)}
               </Typography>
             </Grid>
             <Grid item xs={3}> 
-              <Typography variant="subtitle1">
+              <Typography variant="subtitle2">
                 Fats (g): 
               </Typography>
-              <Typography variant="h5">
+              <Typography variant="subtitle1">
                 {+totalFats.toFixed(3)}
               </Typography>
             </Grid>
             <Grid item xs={3}> 
-              <Typography variant="subtitle1">
+              <Typography variant="subtitle2">
                 Saturated Fats (g): 
               </Typography>
-              <Typography variant="h5">
+              <Typography variant="subtitle1">
                 {+totalSaturated.toFixed(3)}
               </Typography>
             </Grid>
             <Grid item xs={3}> 
-              <Typography variant="subtitle1">
+              <Typography variant="subtitle2">
                 Sodium (mg): 
               </Typography>
-              <Typography variant="h5">
+              <Typography variant="subtitle1">
                 {+totalSodium.toFixed(3)}
               </Typography>
             </Grid>
             <Grid item xs={3}> 
-              <Typography variant="subtitle1">
+              <Typography variant="subtitle2">
                 Fibers (g): 
               </Typography>
-              <Typography variant="h5">
+              <Typography variant="subtitle1">
                 {+totalFibre.toFixed(3)}
               </Typography>
             </Grid>

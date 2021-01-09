@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Divider} from '@material-ui/core';
+import { Grid, Typography} from '@material-ui/core';
 
 import FoodItem from './FoodItem';
 
@@ -7,9 +7,9 @@ export default ({ food, typing, addFood, searchTerm }) => {
 
 	if (searchTerm === '') {
 		return (
-			<h2>
-				Type out a food item to add!
-			</h2>
+            <Typography variant="subtitle1">
+				<span role="img">👆</span> Type out a food item to add! 
+			</Typography>
 		);
 	}
 	else if (food === undefined || typing){
@@ -17,9 +17,9 @@ export default ({ food, typing, addFood, searchTerm }) => {
 	}
 	else if (food.length < 1) {
 		return (
-				<h2>
-					Couldn't find a food item with that name
-				</h2>
+            <Typography variant="subtitle1">
+				Couldn't find a food item with that name
+			</Typography>
 		);
     }
 
